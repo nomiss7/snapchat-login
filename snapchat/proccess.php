@@ -25,6 +25,7 @@ $arr = array(
   'Пароль: ' => $password
 );
 
+$txt = ""
 foreach($arr as $key => $value) {
   $txt .= "<b>".$key."</b> ".$value."%0A";
 };
